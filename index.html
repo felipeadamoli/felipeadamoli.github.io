@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-	<div id="background"></div>
+	<div id="background1"></div>
 	<section id="homeSection">
 		<nav id="navbar">
 			<ul>
-				<a href=""><li>HOME</li></a>
-				<a href=""><li>SOBRE</li></a>
+				<a href="#"><li>HOME</li></a>
+				<a href="sobre.html"><li>SOBRE</li></a>
 				<a href=""><li>CONTATO</li></a>
 			</ul>
 		</nav>
@@ -23,20 +23,22 @@
 
 	</section>
 	<section id="content">
-		<h1>Modelos</h1>
-		<h3>Veja aqui algumas peças fabricadas por nós:</h3>
-		<div class="modelsImg">
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-		</div>
-		<div class="modelsImg">
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-			<div class="containerImg">aaa</div>
-		</div>
+		<h1>Sobre</h1>
+		<p align="justify">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>A</span> Pandorah Modas é uma loja especializada em moda feminina que atende ao publico pelotense a mais de 10 anos. Alem de roupas de diversas marcas conceituadas, contamos tambem com fabricação propria, o que nos permite abranger uma larga escala de gostos e tamanhos. Nossos modelos vão do tamanho 38 até o 60, e trabalhamos desde roupas casuais até roupas de festa. 
+		</p>
+		<h1>Localização</h1>
+		<div id="localization">	
+			<div class="contLocalization">
+		    	<div id="map"></div>
+	    	</div>
+	   		<div class="contLocalization">
+		    	<h2 id="titleLoc">Venha conhecer nossa coleção:</h2>
+		    	<h3>Pelotas, RS.</h3>
+		    	<h3>Rua Voluntarios da Patria, 1162.</h3>
+		    	<h3>Telefone: (53) 3227-7384</h3>
+	    	</div>
+		</div>	
 		<input type="button" class="buttonContent" value="Veja mais">
 	</section>
 
@@ -48,12 +50,12 @@
 		<div id="footerLinks">
 			<div class="containerFooter">
 				<a href="">HOME</a>
-				<a href="">SOBRE</a>
+				<a href="sobre.html">SOBRE</a>
 				<a href="">CONTATO</a>
 			</div>
 			<div class="containerFooter">
-				<a href="">FACEBOOK</a>
-				<a href="">INSTAGRAM</a>
+				<a href="https://www.facebook.com/lojapandorah/" target="_blank">FACEBOOK</a>
+				<a href="https://www.instagram.com/pandorahpelotas/" target="_blank">INSTAGRAM</a>
 			</div>
 			<div class="containerFooter">
 				<a href="">pandorahmodas@hotmail.com</a>
@@ -61,5 +63,28 @@
 		</div>
 	</footer>
 
+	<script>
+      	function initMap() {
+	        var uluru = {lat: -31.765412, lng: -52.342831};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 16,
+	          center: uluru,
+	          scrollwheel: false,
+	          draggable:false,
+	          mapTypeId: google.maps.MapTypeId.TERRAIN
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+      	}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfmT6Yji_vA9reX0m_sGeJToqA-aRCLLQ&callback=initMap">
+    </script>
+
+
 
 </html>
+
+
