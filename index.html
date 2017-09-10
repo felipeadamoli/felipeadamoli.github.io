@@ -14,6 +14,13 @@
 
 </head>
 <body>
+	<span id="sand" onclick="openNav()">&#9776;</span>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Coleção 2018</a>
+		<a href="#">Venha nos conhecer</a>
+		<a href="#">Pedidos</a>
+	</div>
 	<header>
 		<nav>
 			<div class="row">
@@ -36,5 +43,16 @@
 			<h2>Moda para todos</h2>
 		</div>
 	</section>
+
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
 </body>
 </html>
