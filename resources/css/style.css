@@ -7,13 +7,15 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 /*-------------------------------*/
@@ -148,7 +150,7 @@ header {
 	height: 100px;
 	width: auto;
 	float: left;
-	margin: 50px 0 0 50px;
+	margin: 55px 0 0 50px;
 	font-weight: 900;
 	letter-spacing: 0.1px;
 	font-size: 140%;

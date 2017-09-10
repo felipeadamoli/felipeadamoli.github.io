@@ -1,19 +1,30 @@
 
 /*bg tables to 1200px*/
 @media only screen and (max-width: 1200px) {
-
+	
 }
 
 
 /*small tablet to big tablet*/
 @media only screen and (max-width: 1023px) {
-	
+	body { font-size: 18px; }
+	.logo { 
+		font-size: 120%;
+	}
+
+	.main-nav li:first-child {
+		margin-left: 0;
+	}
+
+	.header-text .btn {
+		margin-bottom: 20px;
+	}
 }
 
 
 /* Small phones to small tablets */
 @media only screen and (max-width: 767px) {
-
+	.main-nav { display: none; }
 }
 
 
