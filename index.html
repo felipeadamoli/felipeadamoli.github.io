@@ -16,10 +16,10 @@
 <body>
 	<span id="sand" onclick="openNav()">&#9776;</span>
 	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">Coleção 2018</a>
-		<a href="#">Venha nos conhecer</a>
-		<a href="#">Pedidos</a>
+		<a class="linked" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a class="linked" href="#">Coleção 2018</a>
+		<a class="linked" href="#">Venha nos conhecer</a>
+		<a class="linked" href="#">Pedidos</a>
 	</div>
 	<header>
 		<nav>
@@ -50,8 +50,21 @@
 		}
 
 		function closeNav() {
+			for(i=0;i<links.length;i++){
+				links[i].style.color="black";
+			}
 		    document.getElementById("mySidenav").style.width = "0";
 		}
+
+		var i, links = document.getElementsByClassName('linked');
+		document.getElementById("mySidenav").addEventListener("transitionend", myFunction);
+
+		function myFunction() {
+			for(i=0;i<links.length;i++){
+				links[i].style.color="white";
+			}
+		};
+
 	</script>
 
 </body>
