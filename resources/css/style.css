@@ -106,6 +106,7 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    width: 200px;
 }
 
 .btn-full:link,
@@ -114,7 +115,6 @@ input[type=submit] {
     background-color: #2ecc71;
     border: 1px solid #2ecc71;
     color: #fff;
-    margin-right: 15px;
 }
 
 .btn-ghost:link ,
@@ -148,11 +148,13 @@ input[type=submit] {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
+    text-align: justify;
 }
 
 .box p {
     font-size: 90%;
     line-height: 145%;
+    text-align: justify;
 
 }
 
@@ -324,7 +326,7 @@ header {
     margin-bottom: 15px;
 }
 
-.city-feature {
+.galery-feature {
     margin-bottom: 5px;
 }
 
@@ -349,6 +351,10 @@ header {
 
 .works-steps {
     margin-bottom: 50px;
+}
+
+.works-steps p {
+    text-align: justify;
 }
 
 .works-steps:last-of-type {
