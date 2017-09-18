@@ -37,6 +37,8 @@
     	margin-right: 5px;
 	}
 
+	.steps-box { width: 65%; }
+
 
 
 /* Small phones to small tablets */
@@ -45,14 +47,20 @@
 	body { font-size: 16px; }
 	section { padding: 40px 0; }
 
+	.col {
+		width: 80%;
+	}
+
 	.row { padding: 0 4%; }
-	.col { width: 100% }
+	.galeryRow .col { 
+		margin: 0;
+		width: 50%;
+	}
+
 	.main-nav { display: none; }
 	.header-text { text-align: center; padding: 20%;}
 	.logo { margin: 40px 0 0 20px; }
 	#sand { display: block; }
-
-	h2 { font-size: 150%; }
 
 	.long-paragraph { 
 		width: 100%;
@@ -70,7 +78,17 @@
 	    display: block;
 	}
 
-	.steps-box { width: 90%; }
+	.steps-box { width: 80%; }
+
+	.rowIcons {
+		text-align: center;
+		width: 80%;
+		margin-left: 10%
+	}
+
+	.rowIcons:first-child {
+		margin-left: 10%;
+	}
 
 }
 
@@ -80,6 +98,30 @@
 	.steps-box { width: 100%; }
 	section { padding: 30px 0; }
 	h1 { font-size: 350%; }
+	h2 { font-size: 150%; }
+
+	.col,
+	.galeryRow .col {
+		width: 100%;
+		margin: 0;
+	}
+
+	.rowIcons:first-child {
+		margin: 0;
+	}
+
+	footer {
+		font-size: 90%;
+		padding: 30px 20px;
+	}
+
+	.footer-nav { width: 60%; }
+
+	.footer-nav li { padding: 5px; }
+
+	.email { padding: 0px; }
+
+	.social-links { margin-top: 5px; }
 }
 
 
