@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/app.css">
+    <title>Moblize</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <!-- mblz Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo_moblize.png" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-modal" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+                        navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#predevelopment">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who-we-are">Quem somos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    <div class="container-fluid">
+        <div id="menu" class="menu height-100">
+            <!-- Navbar -->
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center flex-column home-container">
+                    <h1>DESENVOLVEMOS</h1>
+                    <div>
+                        <h2 id="teste"></h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-custom" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header modal-header-custom" data-dismiss="modal" aria-label="Close">
+                            <img src="./assets/images/logo_mblz.svg" class="modal-logo" />
+                        </div>
+                        <div class="modal-body">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a class="nav-link" href="#predevelopment" onclick="$('#nav-modal').hideMenu()">Serviços</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#clients" onclick="$('#nav-modal').hideMenu()">Clientes</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#who-we-are" onclick="$('#nav-modal').hideMenu()">Quem somos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#blog" onclick="$('#nav-modal').hideMenu()">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contact" onclick="$('#nav-modal').hideMenu()">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Dev-->
+
+        <div id="predevelopment" class="predevelopment height-100 d-flex
+                    justify-content-center align-items-center">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel
+                            slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active
+                                    carousel-item-custom">
+                            <div class="row">
+                                <div class="col-md-8 offset-lg-2 col-10
+                                            offset-1">
+                                    <h1 class="dev-title-upper">pré
+                                        <span class="predevelopment-span">_</span>
+                                    </h1>
+                                    <h1 class="dev-title-lower">desenvolvimento</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-lg-2
+                                            dev-text col-10 offset-1">
+                                    <p>Chamamos de pre desenvolvimento a es etapas onde conhecemos o cliente e suas necessidades,
+                                        estruturamos e organizamos tais necessidades em forma de wireframes e de documentação
+                                        detalhada das necessidades</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="offset-lg-2
+                                            predevelopment-image col-md-2 col-3
+                                            offset-1">
+                                    <div class="d-flex flex-column
+                                                align-items-center
+                                                justify-content-center">
+                                        <img src="./assets/images/smartphone.png" />
+                                        <p class="text-uppercase">Reunião Inicial
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                            col-md-2">
+                                    <div class="d-flex flex-column
+                                                align-items-center
+                                                justify-content-center">
+                                        <img src="./assets/images/smartphone.png" />
+                                        <p class="text-uppercase">Análise de Requisitos</p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                            col-md-2">
+                                    <div class="d-flex flex-column
+                                                align-items-center
+                                                justify-content-center">
+                                        <img src="./assets/images/smartphone.png" />
+                                        <p class="text-uppercase">Protóti-pação</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-custom">
+                            <div class="row">
+                                <div class="col-md-8 offset-lg-1 col-10
+                                            offset-1">
+                                    <h1 class="dev-title-upper">
+                                        <span class="development-span">_</span>
+                                    </h1>
+                                    <h1 class="dev-title-lower">desenvolvimento</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-lg-1
+                                            dev-text col-10 offset-1">
+                                    <p>Chamamos de
+                                        <span class="development-span">desenvolvimento</span>
+                                        as etapas onde conhecemos clientes e suas necessidades, estruturamos e organizamos tais necessidades em forma de wireframes
+                                        e de documentação detalhada das necessidades</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-custom">
+                            <div class="row">
+                                <div class="col-md-8 offset-lg-1 col-10
+                                            offset-1">
+                                    <h1 class="dev-title-upper">pós
+                                        <span class="postdevelopment-span">_</span>
+                                    </h1>
+                                    <h1 class="dev-title-lower">desenvolvimento</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-lg-1
+                                            dev-text col-10 offset-1">
+                                    <p>Chamamos de desenvolvimento as etapas onde conhecemos clientes e suas necessidades, estruturamos
+                                        e organizamos tais necessidades em forma de wireframes e de documentação detalhada
+                                        das necessidades</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active
+                                    orange-background"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="purple-background"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="blue-background"></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="side-color"></div>
+        </div>
+        <!--who we are-->
+        <div id="who-we-are" class="who-we-are height-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-6 col-6 offset-1 ">
+                            <h1 class="dev-title-upper">quem somos</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-5 col-10 offset-1 mt-2">
+                            <p class="who-we-are-text">a moblize desenvolve soluções completas para quem quer criar um negócio online, trazer seu negócio
+                                para o mundo digital ou melhorar processos de um negócio através da tecnologia. nossos fundadores
+                                estão no mercado digital e mobile (apps) há anos, com experiencia em empresas convencionais,
+                                startups, concursos, modelos de negócio e captação de investimento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-6 col-6 offset-1 ">
+                            <h1 class="dev-title-upper">equipe</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-5 col-10 offset-1 mt-2">
+                            <p class="who-we-are-text">contamos com uma equipe interdisciplinar de programadores, gestores, designers, e uma extensa rede
+                                de parceiros que pode auxiliar o empreendedor em diversos aspectos de sua jornada</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-5 col-md-2 col-sm-4 mt-2 d-flex justify-content-center">
+                            <button type="button" class=" who-we-are-btn text-uppercase">
+                                <span>Trabalhe Conosco!</span>
+                            </button>
+                            <a href="#">confira nosso blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div id="contact" class="contact height-100 d-flex flex-column">
+                <!--Header-->
+                <div id="title-contact" class="container">
+                    <div class="row">
+                        <div class="offset-2 offset-md-3"> 
+                            <h1>Vamos conversar?</h1>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Contact form -->
+                <form class="form-container container">
+                    <div class="d-flex flex-column justify-content-center center-middle-flex">
+                        <div class="row form-group">
+                            <div class="col-10 offset-1 offset-md-2 col-md-8">
+                                <label for="name-form" class="sr-only">Nome</label>
+                                <input type="text" class="form-control" id="name-form" placeholder="NOME">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
+                                <label for="tel-form" class="sr-only">Telefone</label>
+                                <input type="text" class="form-control" id="tel-form" placeholder="TELEFONE">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
+                                <label for="email-form" class="sr-only">E-mail</label>
+                                <input type="email" class="form-control" id="email-form" aria-describedby="emailHelp" placeholder="EMAIL">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
+                                <label for="request-form" class="sr-only">Demanda</label>
+                                <textarea class="form-control" id="request-form" rows="5" placeholder="DEMANDA"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary" id="upload-contact"><i class="fa fa-upload"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+    
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class= "d-flex flex-column justify-content-center align-items-center center-middle-flex">
+                        <p id="contact-email">contato@moblize.com</p>
+                        <p>Todos os direitos reservados - 2018</p>
+                    </div>
+                </footer>
+    
+            </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascsripts/plugin.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 0,
+            wrap: false
+        });
+        $('.carousel').on('slide.bs.carousel', '', checkitem);
+        $('.carousel').on('slid.bs.carousel', '', checkitem);
+
+        function checkitem() {
+            var $this = $('.carousel');
+            if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
+                $(".carousel-control-prev").hide();
+                $(".carousel-control-next").show();
+                $(".side-color").removeClass().addClass("side-color orange-background");
+            } else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
+                $(".carousel-control-prev").show();
+                $(".carousel-control-next").hide();
+                $(".side-color").removeClass().addClass("side-color blue-background");
+            } else {
+                $(".carousel-control-prev").show();
+                $(".carousel-control-next").show();
+                $(".side-color").removeClass().addClass("side-color purple-background");
+            }
+        }
+        $('#teste').teletype({
+        text: [
+            'APLICATIVOS',
+            'SITES',
+            'LOREM IPSUM'
+        ]
+        });
+        $('#cursor').teletype({
+            text: ['_', ' '],
+            delay: 0,
+            pause: 500
+        });
+        $(document).ready(function () {
+            checkitem();
+        });
+        $(window).scroll(function(){
+            console.log($(window).scrollTop())
+            if($(window).scrollTop()> 20) {
+                $('.navbar').addClass('nav-on-scroll')
+            } else {
+                $('.navbar').removeClass('nav-on-scroll')
+            }
+        });
+    </script>
+</body>
+
+</html>
