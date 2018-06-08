@@ -9,6 +9,7 @@
         crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/stylesheets/app.css">
     <title>Moblize</title>
 </head>
@@ -17,7 +18,7 @@
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <!-- mblz Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo_moblize.png" class="img-fluid" />
+                    <img src="assets/images/logo_moblize_full.png" class="img-fluid logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-modal" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
@@ -50,10 +51,12 @@
         <div id="menu" class="menu height-100">
             <!-- Navbar -->
             <div class="container">
-                <div class="d-flex justify-content-center align-items-center flex-column home-container">
-                    <h1>DESENVOLVEMOS</h1>
-                    <div>
-                        <h2 id="teste"></h2>
+                <div class="d-flex align-items-center flex-row home-container">
+                    <div class="home-title justify-content-end">         
+                        <h1>CRIAMOS</h1>
+                    </div>
+                    <div class="home-title pl-2">
+                        <h1 id="quote" class="quotes">APLICATIVOS</h1>
                     </div>
                 </div>
             </div>
@@ -111,20 +114,22 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 offset-lg-2
-                                            dev-text col-10 offset-1">
+                                            dev-text col-10 offset-1 predevelopment-text">
                                     <p>Chamamos de pre desenvolvimento a es etapas onde conhecemos o cliente e suas necessidades,
                                         estruturamos e organizamos tais necessidades em forma de wireframes e de documentação
                                         detalhada das necessidades</p>
                                 </div>
                             </div>
-                            <div class="row mt-4">
+                            <div class="row">
                                 <div class="offset-lg-2
                                             predevelopment-image col-md-2 col-3
                                             offset-1">
                                     <div class="d-flex flex-column
                                                 align-items-center
-                                                justify-content-center">
-                                        <img src="./assets/images/smartphone.png" />
+                                                justify-content-center first-predev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-user"></i>
+                                        </div>
                                         <p class="text-uppercase">Reunião Inicial
                                         </p>
                                     </div>
@@ -133,8 +138,10 @@
                                             col-md-2">
                                     <div class="d-flex flex-column
                                                 align-items-center
-                                                justify-content-center">
-                                        <img src="./assets/images/smartphone.png" />
+                                                justify-content-center second-predev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-search"></i>
+                                        </div>
                                         <p class="text-uppercase">Análise de Requisitos</p>
                                     </div>
                                 </div>
@@ -142,16 +149,26 @@
                                             col-md-2">
                                     <div class="d-flex flex-column
                                                 align-items-center
-                                                justify-content-center">
-                                        <img src="./assets/images/smartphone.png" />
+                                                justify-content-center third-predev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-building"></i>
+                                        </div>
                                         <p class="text-uppercase">Protóti-pação</p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-none col-md-6 offset-lg-2
+                                            dev-text col-10 offset-1 mt-4 predevelopment-secondary">
+                                    <p id="predevelopment-secondary-text">Chamamos de pre desenvolvimento a es etapas onde conhecemos o cliente e suas necessidades,
+                                        estruturamos e organizamos tais necessidades em forma de wireframes e de documentação
+                                        detalhada das necessidades</p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item carousel-item-custom">
                             <div class="row">
-                                <div class="col-md-8 offset-lg-1 col-10
+                                <div class="col-md-8 offset-lg-2 col-10
                                             offset-1">
                                     <h1 class="dev-title-upper">
                                         <span class="development-span">_</span>
@@ -160,7 +177,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 offset-lg-1
+                                <div class="col-md-6 offset-lg-2
                                             dev-text col-10 offset-1">
                                     <p>Chamamos de
                                         <span class="development-span">desenvolvimento</span>
@@ -171,7 +188,7 @@
                         </div>
                         <div class="carousel-item carousel-item-custom">
                             <div class="row">
-                                <div class="col-md-8 offset-lg-1 col-10
+                                <div class="col-md-8 offset-lg-2 col-10
                                             offset-1">
                                     <h1 class="dev-title-upper">pós
                                         <span class="postdevelopment-span">_</span>
@@ -180,7 +197,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 offset-lg-1
+                                <div class="col-md-6 offset-lg-2
                                             dev-text col-10 offset-1">
                                     <p>Chamamos de desenvolvimento as etapas onde conhecemos clientes e suas necessidades, estruturamos
                                         e organizamos tais necessidades em forma de wireframes e de documentação detalhada
@@ -297,6 +314,7 @@
                 <!-- Footer -->
                 <footer class="footer">
                     <div class= "d-flex flex-column justify-content-center align-items-center center-middle-flex">
+                        <img src="assets/images/logo_moblize_full.png" class="img-fluid mt-2 mb-2" />
                         <p id="contact-email">contato@moblize.com</p>
                         <p>Todos os direitos reservados - 2018</p>
                     </div>
@@ -304,20 +322,76 @@
     
             </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./assets/javascsripts/plugin.js"></script>
     <script>
+        $('.first-predev').click(function() {
+            $('.predevelopment-text').hide()
+            $('.predevelopment-secondary').removeClass('d-none')
+            $('.first-predev').addClass('selected-image')
+            $('.second-predev').removeClass('selected-image')
+            $('.third-predev').removeClass('selected-image')
+            $('#predevelopment-secondary-text').text('troca o texto')
+        })
+        $('.second-predev').click(function() {
+            $('.predevelopment-text').hide()
+            $('.predevelopment-secondary').removeClass('d-none')
+            $('.second-predev').addClass('selected-image')
+            $('.first-predev').removeClass('selected-image')
+            $('.third-predev').removeClass('selected-image')
+            $('#predevelopment-secondary-text').text('segundo texto')
+        })
+        $('.third-predev').click(function() {
+            $('.predevelopment-text').hide()
+            $('.predevelopment-secondary').removeClass('d-none')
+            $('.third-predev').addClass('selected-image')
+            $('.first-predev').removeClass('selected-image')
+            $('.second-predev').removeClass('selected-image')
+            $('#predevelopment-secondary-text').text('terceiro')
+        })
         $('.carousel').carousel({
             interval: 0,
             wrap: false
         });
         $('.carousel').on('slide.bs.carousel', '', checkitem);
         $('.carousel').on('slid.bs.carousel', '', checkitem);
+        
+        function navbarPosition() {
+            if($(window).scrollTop()> 20) {
+                $('.navbar').addClass('nav-on-scroll')
+                $(".logo").attr("src","assets/images/logo_moblize.png");
+            } else {
+                $('.navbar').removeClass('nav-on-scroll');
+                $(".logo").attr("src","assets/images/logo_moblize_full.png");
+
+            }
+        }
+        
+        var quotes = [
+            'APLICATIVOS',
+            'SITES',
+            'LOREM IPSUM'
+        ]
+
+        var fadeIndex = 1;
+
+        function fadeText() {
+            $('#quote').fadeToggle("slow", function() {
+                if(!$('#quote').is(':visible')){
+                    $('#quote').text(quotes[fadeIndex])
+                    fadeIndex++;
+                    if(fadeIndex === 3) {
+                        fadeIndex = 0;
+                    }
+                }
+            })
+        }
 
         function checkitem() {
             var $this = $('.carousel');
@@ -335,28 +409,13 @@
                 $(".side-color").removeClass().addClass("side-color purple-background");
             }
         }
-        $('#teste').teletype({
-        text: [
-            'APLICATIVOS',
-            'SITES',
-            'LOREM IPSUM'
-        ]
-        });
-        $('#cursor').teletype({
-            text: ['_', ' '],
-            delay: 0,
-            pause: 500
-        });
         $(document).ready(function () {
             checkitem();
+            navbarPosition();
+            setInterval(fadeText, 1200);
         });
-        $(window).scroll(function(){
-            console.log($(window).scrollTop())
-            if($(window).scrollTop()> 20) {
-                $('.navbar').addClass('nav-on-scroll')
-            } else {
-                $('.navbar').removeClass('nav-on-scroll')
-            }
+        $(window).scroll(function() {
+            navbarPosition();
         });
     </script>
 </body>
