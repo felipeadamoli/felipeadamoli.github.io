@@ -86,7 +86,7 @@ h1 {
 
 .carousel-control-next {
   z-index: 1;
-  margin-right: -40px;
+  margin-right: -160px;
 }
 
 .carousel-indicators li {
@@ -125,14 +125,41 @@ h1 {
   font-size: 90%
 }
 
-.selected-image {
+.selected-image-predev {
   background-color: #1BD5EF;
 }
 
-.predevelopment-image > div {
+.first-predev,
+.second-predev,
+.third-predev {
   border: 3px solid  #1BD5EF;
+}
+
+.selected-image-dev {
+  background-color: #1EA5DB;
+}
+
+.first-dev,
+.second-dev,
+.third-dev {
+  border: 3px solid  #1EA5DB;
+}
+
+.selected-image-postdev {
+  background-color: #0075BE;
+}
+
+.first-postdev,
+.second-postdev,
+.third-postdev {
+  border: 3px solid #0075BE;
+}
+
+.predevelopment-image > div {
+  /* border: 3px solid  #1BD5EF; */
   padding: 20px 0px;
   max-width: 140px;
+  min-height: 140px;
 }
 
 .predevelopment-span {
@@ -233,16 +260,17 @@ MENU SECTION
   background-position: center;
 }
 
-
-
 .home-container {
-  height: 100vh;
+  height: 50vh;
   width: 100 vw;
-  margin: 0 auto
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.home-container h1,
-.home-container h2 {
+.home-container h1 {
   color: white;
 }
 
@@ -252,8 +280,19 @@ MENU SECTION
   min-width: 100;
 }
 
+.home-title:first-child {
+  display: flex;
+  flex: 1;
+  min-width: 100;
+  justify-content: flex-end;
+}
+
 .quotes {
-  border-bottom: 3px solid #0075BE
+  border-bottom: 3px solid #0075BE;
+}
+
+#fixed-title {
+  border-bottom: 3px solid transparent;
 }
 
 /* .quotes {
@@ -291,7 +330,7 @@ button:focus{
 }
 
 .navbar {
-  padding: 2rem 5rem;
+  padding: 1.5rem 5rem;
 }
 
 .modal-content {
@@ -447,8 +486,13 @@ CONTACT SECTION
 
 .form-control {
   text-align: center;
-  border-radius: 35px;
+  border-radius: 35px !important;
   /* margin: 0 auto; */
+}
+
+#work-intention {
+  border: none;
+  background-color: white;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -504,7 +548,7 @@ CONTACT SECTION
   }
 
   .who-we-are {
-    background-image: none;
+    background-position: center;
   }
 }
 
@@ -543,12 +587,14 @@ CONTACT SECTION
 
   .dev-title-upper {
     margin: 20px 0 0 0;
+    font-size: 180%
   }
 
   .dev-title-lower {
     word-break: break-all;
     line-height: 80%;
     margin-bottom: 20px;
+    font-size: 180%
   }
 
   .predevelopment-image {
@@ -585,7 +631,7 @@ CONTACT SECTION
   }
 
   .who-we-are-btn {
-    display: none;
+    margin-bottom: 10px
   }
 
   .who-we-are a {
@@ -602,20 +648,45 @@ CONTACT SECTION
     margin-bottom: 20px;
   }
 
+  .home-container {
+    display: inline;
+  }
+
+  .home-container div:first-of-type {
+    height: 50vh;
+    display: flex;
+    align-items: flex-end
+  }
+
+  .home-title:first-child {
+    justify-content: center;
+  }
+
+  .home-title:last-child {
+    justify-content: center;
+  }
+
+  .contact h1 {
+    color: white;
+    word-wrap: break-word;
+    margin: 40px 0px 15px 0;
+    line-height: 90%;
+  }
+
 }
 
 /*  Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   body {
-    font-size: 14;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 250%;
+    font-size: 200%;
   }
 
   .navbar {
-    padding: 2rem;
+    padding: 1rem 1.5rem;
   }
 
   .predevelopment-image p {
@@ -638,6 +709,14 @@ CONTACT SECTION
     font-size: 12px;
   }
 
+  .predevelopment-image p {
+    font-size: 70%;
+  }
+
+  .protopipacao {
+    word-wrap: break-word;
+  }
+
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -646,4 +725,10 @@ CONTACT SECTION
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
+
+  .carousel-control-next {
+    z-index: 1;
+    margin-right: -5vw
+  }
+
 }

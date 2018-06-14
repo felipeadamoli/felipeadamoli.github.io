@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/app.css">
+    <title>Moblize</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <!-- mblz Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo_moblize_full.png" class="img-fluid logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-modal" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+                        navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#predevelopment">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#clients">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#who-we-are">Quem somos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="menu">
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-custom" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header modal-header-custom" data-dismiss="modal" aria-label="Close">
+                            <img src="./assets/images/logo_mblz.svg" class="modal-logo" />
+                        </div>
+                        <div class="modal-body">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a class="nav-link" href="#predevelopment" onclick="$('#nav-modal').hideMenu()">Serviços</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#clients" onclick="$('#nav-modal').hideMenu()">Clientes</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#who-we-are" onclick="$('#nav-modal').hideMenu()">Quem somos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contact" onclick="$('#nav-modal').hideMenu()">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="contact height-100 d-flex flex-column">
+            <!--Header-->
+            <div id="title-contact" class="container mt-5">
+                <div class="row">
+                    <div class="offset-2 offset-md-3">
+                        <h1>Vamos conversar?</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <form class="form-container container">
+                <div class="d-flex flex-column justify-content-center center-middle-flex">
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="name-form" class="sr-only">Nome</label>
+                            <input type="text" class="form-control" id="name-form" placeholder="NOME">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="tel-form" class="sr-only">Telefone</label>
+                            <input type="text" class="form-control" id="tel-form" placeholder="TELEFONE">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="email-form" class="sr-only">E-mail</label>
+                            <input type="email" class="form-control" id="email-form" aria-describedby="emailHelp" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label class="sr-only" for="work-intention">Options</label>
+
+                            <input list="browsers" class="form-control" placeholder="CARGOS">
+                            <datalist id="browsers">
+                                <option value="Frontend">
+                                <option value="Backend">
+                                <option value="Full-Stack">
+                                <option value="Estágiario">
+                                <option value="Quality Assurance">
+                            </datalist>
+
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="request-form" class="sr-only">Fale sobre você</label>
+                            <textarea class="form-control" id="request-form" rows="5" placeholder="DEMANDA"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary" id="upload-contact">
+                                <i class="fa fa-upload"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="d-flex flex-column justify-content-center align-items-center center-middle-flex">
+                    <img src="assets/images/logo_moblize_full.png" class="img-fluid mt-2 mb-2" />
+                    <p id="contact-email">contato@moblize.com</p>
+                    <p>Todos os direitos reservados - 2018</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        function navbarPosition() {
+            $('.navbar').addClass('nav-on-scroll')
+            $(".logo").attr("src", "assets/images/logo_moblize.png");
+        }
+
+        $(document).ready(function () {
+            navbarPosition();
+        });
+
+    </script>
+</body>
+
+</html>

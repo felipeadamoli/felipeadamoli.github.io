@@ -9,56 +9,57 @@
         crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/stylesheets/app.css">
     <title>Moblize</title>
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
-                <!-- mblz Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo_moblize_full.png" class="img-fluid logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-modal" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <!-- mblz Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo_moblize_full.png" class="img-fluid logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-modal" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
                         navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#predevelopment">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#clients">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#who-we-are">Quem somos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#predevelopment">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clients">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#who-we-are">Quem somos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div id="menu" class="menu height-100">
             <!-- Navbar -->
             <div class="container">
-                <div class="d-flex align-items-center flex-row home-container">
-                    <div class="home-title justify-content-end">         
-                        <h1>CRIAMOS</h1>
+                <div class="home-container">
+                    <div class="home-title">
+                        <h1 id="fixed-title">CRIAMOS</h1>
                     </div>
                     <div class="home-title pl-2">
                         <h1 id="quote" class="quotes">APLICATIVOS</h1>
                     </div>
                 </div>
+                <!-- <div class="d-flex align-items-center justify-content-center flex-row home-container">
+                    <a>SAIBA MAIS</a>
+                </div> -->
             </div>
 
             <!-- Modal -->
@@ -79,9 +80,6 @@
                                 <li>
                                     <a class="nav-link" href="#who-we-are" onclick="$('#nav-modal').hideMenu()">Quem somos
                                     </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="#blog" onclick="$('#nav-modal').hideMenu()">Blog</a>
                                 </li>
                                 <li>
                                     <a class="nav-link" href="#contact" onclick="$('#nav-modal').hideMenu()">Contato</a>
@@ -153,7 +151,7 @@
                                         <div style="font-size:3em; color:Black">
                                             <i class="fas fa-building"></i>
                                         </div>
-                                        <p class="text-uppercase">Protóti-pação</p>
+                                        <p class="text-uppercase">Prototição</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,11 +176,56 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 offset-lg-2
-                                            dev-text col-10 offset-1">
+                                            dev-text col-10 offset-1 development-text">
                                     <p>Chamamos de
                                         <span class="development-span">desenvolvimento</span>
                                         as etapas onde conhecemos clientes e suas necessidades, estruturamos e organizamos tais necessidades em forma de wireframes
                                         e de documentação detalhada das necessidades</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="offset-lg-2
+                                                predevelopment-image col-md-2 col-3
+                                                offset-1">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center first-dev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <p class="text-uppercase">Reunião Inicial
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                                col-md-2">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center second-dev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <p class="text-uppercase">Análise de Requisitos</p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                                col-md-2">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center third-dev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-building"></i>
+                                        </div>
+                                        <p class="text-uppercase">Prototição</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-none col-md-6 offset-lg-2
+                                                dev-text col-10 offset-1 mt-4 development-secondary">
+                                    <p id="development-secondary-text">Chamamos de pre desenvolvimento a es etapas onde conhecemos o cliente e suas necessidades,
+                                        estruturamos e organizamos tais necessidades em forma de wireframes e de documentação
+                                        detalhada das necessidades</p>
                                 </div>
                             </div>
                         </div>
@@ -198,10 +241,55 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 offset-lg-2
-                                            dev-text col-10 offset-1">
+                                            dev-text col-10 offset-1 postdevelopment-text">
                                     <p>Chamamos de desenvolvimento as etapas onde conhecemos clientes e suas necessidades, estruturamos
                                         e organizamos tais necessidades em forma de wireframes e de documentação detalhada
                                         das necessidades</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="offset-lg-2
+                                                predevelopment-image col-md-2 col-3
+                                                offset-1">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center first-postdev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <p class="text-uppercase">Reunião Inicial
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                                col-md-2">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center second-postdev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <p class="text-uppercase">Análise de Requisitos</p>
+                                    </div>
+                                </div>
+                                <div class="predevelopment-image col-3
+                                                col-md-2">
+                                    <div class="d-flex flex-column
+                                                    align-items-center
+                                                    justify-content-center third-postdev">
+                                        <div style="font-size:3em; color:Black">
+                                            <i class="fas fa-building"></i>
+                                        </div>
+                                        <p class="text-uppercase">Prototição</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-none col-md-6 offset-lg-2
+                                                dev-text col-10 offset-1 mt-4 postdevelopment-secondary">
+                                    <p id="postdevelopment-secondary-text">Chamamos de pre desenvolvimento a es etapas onde conhecemos o cliente e suas necessidades,
+                                        estruturamos e organizamos tais necessidades em forma de wireframes e de documentação
+                                        detalhada das necessidades</p>
                                 </div>
                             </div>
                         </div>
@@ -250,16 +338,15 @@
                     </div>
                     <div class="row">
                         <div class="offset-md-1 col-md-5 col-10 offset-1 mt-2">
-                            <p class="who-we-are-text">contamos com uma equipe interdisciplinar de programadores, gestores, designers, e uma extensa rede
-                                de parceiros que pode auxiliar o empreendedor em diversos aspectos de sua jornada</p>
+                            <p class="who-we-are-text">contamos com uma equipe interdisciplinar de programadores, gestores, designers, e uma extensa
+                                rede de parceiros que pode auxiliar o empreendedor em diversos aspectos de sua jornada</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="offset-md-5 col-md-2 col-sm-4 mt-2 d-flex justify-content-center">
-                            <button type="button" class=" who-we-are-btn text-uppercase">
+                            <button type="button" class="who-we-are-btn text-uppercase">
                                 <span>Trabalhe Conosco!</span>
                             </button>
-                            <a href="#">confira nosso blog</a>
                         </div>
                     </div>
                 </div>
@@ -267,157 +354,70 @@
         </div>
         <!-- Contact -->
         <div id="contact" class="contact height-100 d-flex flex-column">
-                <!--Header-->
-                <div id="title-contact" class="container">
+            <!--Header-->
+            <div id="title-contact" class="container">
+                <div class="row">
+                    <div class="offset-2 offset-md-3">
+                        <h1>Vamos conversar?</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <form class="form-container container">
+                <div class="d-flex flex-column justify-content-center center-middle-flex">
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="name-form" class="sr-only">Nome</label>
+                            <input type="text" class="form-control" id="name-form" placeholder="NOME">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="tel-form" class="sr-only">Telefone</label>
+                            <input type="text" class="form-control" id="tel-form" placeholder="TELEFONE">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="email-form" class="sr-only">E-mail</label>
+                            <input type="email" class="form-control" id="email-form" aria-describedby="emailHelp" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-10 offset-1 offset-md-2 col-md-8">
+                            <label for="request-form" class="sr-only">Demanda</label>
+                            <textarea class="form-control" id="request-form" rows="5" placeholder="DEMANDA"></textarea>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="offset-2 offset-md-3"> 
-                            <h1>Vamos conversar?</h1>
+                        <div class="col-sm-12 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary" id="upload-contact">
+                                <i class="fa fa-upload"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Contact form -->
-                <form class="form-container container">
-                    <div class="d-flex flex-column justify-content-center center-middle-flex">
-                        <div class="row form-group">
-                            <div class="col-10 offset-1 offset-md-2 col-md-8">
-                                <label for="name-form" class="sr-only">Nome</label>
-                                <input type="text" class="form-control" id="name-form" placeholder="NOME">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
-                                <label for="tel-form" class="sr-only">Telefone</label>
-                                <input type="text" class="form-control" id="tel-form" placeholder="TELEFONE">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
-                                <label for="email-form" class="sr-only">E-mail</label>
-                                <input type="email" class="form-control" id="email-form" aria-describedby="emailHelp" placeholder="EMAIL">
-                            </div>
-                        </div>
-                        <div class="row form-group ">
-                            <div  class="col-10 offset-1 offset-md-2 col-md-8">
-                                <label for="request-form" class="sr-only">Demanda</label>
-                                <textarea class="form-control" id="request-form" rows="5" placeholder="DEMANDA"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary" id="upload-contact"><i class="fa fa-upload"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-    
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class= "d-flex flex-column justify-content-center align-items-center center-middle-flex">
-                        <img src="assets/images/logo_moblize_full.png" class="img-fluid mt-2 mb-2" />
-                        <p id="contact-email">contato@moblize.com</p>
-                        <p>Todos os direitos reservados - 2018</p>
-                    </div>
-                </footer>
-    
-            </div>
+            </form>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="d-flex flex-column justify-content-center align-items-center center-middle-flex">
+                    <img src="assets/images/logo_moblize_full.png" class="img-fluid mt-2 mb-2" />
+                    <p id="contact-email">contato@moblize.com</p>
+                    <p>Todos os direitos reservados - 2018</p>
+                </div>
+            </footer>
+
+        </div>
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script>
-        $('.first-predev').click(function() {
-            $('.predevelopment-text').hide()
-            $('.predevelopment-secondary').removeClass('d-none')
-            $('.first-predev').addClass('selected-image')
-            $('.second-predev').removeClass('selected-image')
-            $('.third-predev').removeClass('selected-image')
-            $('#predevelopment-secondary-text').text('troca o texto')
-        })
-        $('.second-predev').click(function() {
-            $('.predevelopment-text').hide()
-            $('.predevelopment-secondary').removeClass('d-none')
-            $('.second-predev').addClass('selected-image')
-            $('.first-predev').removeClass('selected-image')
-            $('.third-predev').removeClass('selected-image')
-            $('#predevelopment-secondary-text').text('segundo texto')
-        })
-        $('.third-predev').click(function() {
-            $('.predevelopment-text').hide()
-            $('.predevelopment-secondary').removeClass('d-none')
-            $('.third-predev').addClass('selected-image')
-            $('.first-predev').removeClass('selected-image')
-            $('.second-predev').removeClass('selected-image')
-            $('#predevelopment-secondary-text').text('terceiro')
-        })
-        $('.carousel').carousel({
-            interval: 0,
-            wrap: false
-        });
-        $('.carousel').on('slide.bs.carousel', '', checkitem);
-        $('.carousel').on('slid.bs.carousel', '', checkitem);
-        
-        function navbarPosition() {
-            if($(window).scrollTop()> 20) {
-                $('.navbar').addClass('nav-on-scroll')
-                $(".logo").attr("src","assets/images/logo_moblize.png");
-            } else {
-                $('.navbar').removeClass('nav-on-scroll');
-                $(".logo").attr("src","assets/images/logo_moblize_full.png");
-
-            }
-        }
-        
-        var quotes = [
-            'APLICATIVOS',
-            'SITES',
-            'LOREM IPSUM'
-        ]
-
-        var fadeIndex = 1;
-
-        function fadeText() {
-            $('#quote').fadeToggle("slow", function() {
-                if(!$('#quote').is(':visible')){
-                    $('#quote').text(quotes[fadeIndex])
-                    fadeIndex++;
-                    if(fadeIndex === 3) {
-                        fadeIndex = 0;
-                    }
-                }
-            })
-        }
-
-        function checkitem() {
-            var $this = $('.carousel');
-            if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
-                $(".carousel-control-prev").hide();
-                $(".carousel-control-next").show();
-                $(".side-color").removeClass().addClass("side-color orange-background");
-            } else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
-                $(".carousel-control-prev").show();
-                $(".carousel-control-next").hide();
-                $(".side-color").removeClass().addClass("side-color blue-background");
-            } else {
-                $(".carousel-control-prev").show();
-                $(".carousel-control-next").show();
-                $(".side-color").removeClass().addClass("side-color purple-background");
-            }
-        }
-        $(document).ready(function () {
-            checkitem();
-            navbarPosition();
-            setInterval(fadeText, 1200);
-        });
-        $(window).scroll(function() {
-            navbarPosition();
-        });
-    </script>
+    <script src="./assets/javascsripts/app.js"> </script>
 </body>
 
 </html>
