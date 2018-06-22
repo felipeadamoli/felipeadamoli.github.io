@@ -98,7 +98,12 @@ function navbarPosition() {
 var quotes = [
     'APPS',
     'SITES',
-    'LOREM IPSUM'
+    'SISTEMAS',
+    'PROTÓTIPOS',
+    'DESIGN',
+    'APIs',
+    'DASHBOARD',
+    'WIREFRAMES'
 ]
 
 var fadeIndex = 1;
@@ -108,7 +113,7 @@ function fadeText() {
         if(!$('#quote').is(':visible')){
             $('#quote').text(quotes[fadeIndex])
             fadeIndex++;
-            if(fadeIndex === 3) {
+            if(fadeIndex === quotes.length) {
                 fadeIndex = 0;
             }
         }
@@ -139,3 +144,87 @@ $(document).ready(function () {
 $(window).scroll(function() {
     navbarPosition();
 });
+
+// $(function() {
+//     $('body').on('click', '.card', function() {
+//         var cards = $('.card')
+//       $(this).remove()
+//       var lastCard = $('<div />', {
+//           "class": 'card last-card'});
+//       $('.card').each(function() {
+//         var newZ = parseInt($(this).css('transform').split(',')[14]) + 10;
+//         var newZIndex = parseInt($(this).css('z-index')) + 1;
+//         $(this).css({
+//           'transform': 'translate3d(-50%, -50%, ' + newZ + 'px)',
+//           'z-index': newZIndex
+//         });
+//         $('.container-cards').append(lastCard);
+//       });
+      
+//     })
+//   })
+
+  var clientes = [
+    {  
+        name: 'Sandra Carla',
+        brand: 'swp',
+        img: './assets/images/client-bg-1',
+        text: 'Felicita-me as medidas tomadas pela moblize. Serviço de qualidade e sinceridade nas transações!'
+    },
+    {  
+        name: 'Lorem Ipsum',
+        brand: 'ddd',
+        img: './assets/images/client-bg-2',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt '
+    },
+    {  
+        name: 'Sandra Carla',
+        brand: 'swp',
+        img: './assets/images/client-bg-3',
+        text: 'Felicita-me as medidas tomadas pela moblize. Serviço de qualidade e sinceridade nas transações!'
+    },
+    {  
+        name: 'Lorem Ipsum',
+        brand: 'ddd',
+        img: './assets/images/client-bg-4',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt '
+    },
+    {  
+        name: 'Sandra Carla',
+        brand: 'ddd',
+        img: './assets/images/client-bg-5',
+        text: 'Felicita-me as medidas tomadas pela moblize. Serviço de qualidade e sinceridade nas transações!'
+    }
+  ]
+
+  var clientIndex = 1;
+  $('.cards-control-next').on('click', function() {
+        $('.testemony-text').text(clientes[clientIndex].text)
+        $('.client-name').text(clientes[clientIndex].name)
+        $('.brands').text(clientes[clientIndex].brand)
+        $('.client-name').text(clientes[clientIndex].name)
+        console.log($('.img-clients')[clientIndex])
+        $('.img-clients').eq(clientIndex-1).toggleClass('clients-footer-selected')
+        $('.img-clients').eq(clientIndex).toggleClass('clients-footer-selected')
+
+        $('.client-image').eq(clientIndex-1).toggleClass('actived-client-image')
+        $('.client-image').eq(clientIndex).toggleClass('actived-client-image')
+        clientIndex++;
+        if(clientIndex>=clientes.length){
+            clientIndex=0;
+        }
+
+        var cards = $('.card')
+        cards[0].remove()
+        var lastCard = $('<div />', {
+            "class": 'card last-card'});
+        $('.card').each(function() {
+        var newZ = parseInt($(this).css('transform').split(',')[14]) + 10;
+        var newZIndex = parseInt($(this).css('z-index')) + 1;
+        $(this).css({
+            'transform': 'translate3d(-50%, -50%, ' + newZ + 'px)',
+            'z-index': newZIndex
+        });
+        $('.container-cards').append(lastCard);
+        });
+  })

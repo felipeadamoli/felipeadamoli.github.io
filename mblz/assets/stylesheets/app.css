@@ -110,6 +110,10 @@ h1 {
 
 /* predevelopment */
 
+.slide {
+  margin-top: 8rem
+}
+
 .predevelopment-image img {
   height: 50px;
   margin-bottom: 10px;
@@ -186,6 +190,10 @@ h1 {
   background-image:url('../images/map-background.jpg');
   background-repeat:no-repeat;
   background-position:75% 40%;
+}
+
+.who-we-are-container {
+  margin-top: 7rem
 }
 
 .who-we-are-text {
@@ -391,12 +399,162 @@ button.navbar-toggler:hover{
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+.pers100 {
+  perspective: 80px;
+  perspective-origin: 50% -5%;
+}
+
+.card {
+  line-height: 150px;
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 160px;
+  top: 20%;
+  left: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1s;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+  background-size: cover;
+  background-position: center;
+}
+
+.card:not(:first-child) {
+  opacity: 0.9;
+}
+
+.container-client-images {
+  display: none;
+}
+
+.client-image {
+  /* background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)); */
+  height: 35vh;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
+
+.actived-client-image {
+  display: block
+}
+
+.first-client-image {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.second-client-image {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-client-image {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-client-image {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fifth-client-image {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.first {
+  transform: translate3d(-50%, -50%, 40px);
+  z-index: 4;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/client-bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.second {
+  transform: translate3d(-50%, -50%, 30px);
+  z-index: 3;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+}
+
+.third {
+  transform: translate3d(-50%, -50%, 20px);
+  z-index: 2;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+}
+
+.forth {
+  transform: translate3d(-50%, -50%, 10px);
+  z-index: 1;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+}
+
+.card.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.last-card {
+  transform: translate3d(-50%, -50%, 10px);
+  z-index: 1;
+}
+
+.container-cards {
+  height: 55vh;
+  width: 50vw
+}
+
+.cards-control-next {
+  position: absolute;
+  right: 5px;
+  z-index: 20;
+  top: 20vh;
+} 
+
   /*
-CLIENT SECTION
-*/
+CLIENT SECTION */
 
 .clients {
   background-color: #fff;
+}
+
+.clients-footer div img {
+  opacity: 0.4;
+  height: 40px;
+}
+
+.clients-footer div {
+  height: 50px
+}
+
+.first-img-clients {
+  height: 25px !important;
+}
+
+.client-info {
+  margin-bottom: 0px 
+}
+
+.clients-footer-selected {
+  opacity: 1 !important;
+}
+
+.clients-title {
+  margin-top: 6rem;
+}
+
+.photo-client img {
+  height: 60px;
 }
 
 .clients h1{
@@ -408,21 +566,61 @@ CLIENT SECTION
   flex:2;
 }
 
-.quote-icon {
-  font-family: 'Poppins';
-  font-size: 2.5rem;/* O mesmo que o do h1 das outras seções (e desta) */
+.quote-icon:first-child {
+  position: absolute;
 }
 
-blockquote p {
+.blue-stripe {
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  background-color: rgb(0,117,190, 0.7);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.first-stripe {
+  top: 0rem;
+  left: -75px;
+}
+
+.second-stripe {
+  top: 40%;
+  left: -100px;
+}
+
+.third-stripe {
+  bottom: 0;
+  left: -75px;
+}
+
+.quote-icon {
+  font-family: 'Poppins';
+  font-size: 3rem;
+  font-weight: 900
+}
+
+.container-relative {
+  position: relative;
+  display: inline;
+}
+
+.container-relative span {
   text-transform: uppercase;
   font-family: 'Poppins';
   font-weight: 400;
+  font-size: 16px;
+  line-height: 2rem
 }
 
 .hr-testemony{
   width: 50%;
   margin-left:0;
   border-top: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.testemony-text{
+  font-size: 14px
 }
 
 .quote-right {
@@ -457,6 +655,10 @@ CONTACT SECTION
   flex: 1;
 }
 
+#title-contact {
+  margin-top: 3rem;
+}
+
 .footer p {
   font-family: 'Fredoka One', cursive; /* Change font here if necessary */
   margin:0;
@@ -474,6 +676,10 @@ CONTACT SECTION
   word-wrap: break-word;
   margin: 40px 0px 30px 0;
   line-height: 90%;
+}
+
+.lets-talk {
+  margin: 0 auto;
 }
 
 .form-container {
@@ -576,7 +782,7 @@ CONTACT SECTION
   }
 
   .carousel-control-next {
-    z-index: 1;
+    z-index: 100;
     margin-right: -15px;
   }
 
@@ -610,13 +816,12 @@ CONTACT SECTION
     font-size: 60%;
   }
 
-  .carousel-indicators {
-    display: none;
-  }
-
   .who-we-are-text {
     text-transform: lowercase;
   }
+
+  .who-we-are-container {
+    margin-top: 0  }
 
   .who-we-are .container {
     height: 100vh;
@@ -673,6 +878,34 @@ CONTACT SECTION
     line-height: 90%;
   }
 
+  .cards-hidden-sm {
+    display: none !important
+  }
+
+  .blue-stripe {
+    display: none
+  }
+
+  .blockquote {
+    margin-top: 35vh
+  }
+
+  .cards-control-next {
+    position: absolute;
+    right: 10px;
+    z-index: 20;
+    top: 60vh
+  }
+
+  .clients-title {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem
+  }
+
+  .container-client-images {
+    display: block;
+  }
+
 }
 
 /*  Medium devices (tablets, less than 992px) */
@@ -715,6 +948,39 @@ CONTACT SECTION
 
   .protopipacao {
     word-wrap: break-word;
+  }
+
+  .pers100 {
+    perspective: 120px;
+    perspective-origin: 50% -15%;
+  }
+
+  .container-cards {
+    height: 60vh;
+  }
+
+  .container-relative span {
+    font-size: 12px
+  }
+
+  .text-client p {
+    font-size: 12px
+  }
+
+  .blue-stripe {
+    width: 80px;
+    height: 20px;
+  }
+
+  .second-stripe {
+    bottom: 0;
+    left: -80px;
+  }
+
+  .first-stripe,
+  .third-stripe {
+    bottom: 0;
+    left: -60px;
   }
 
 }

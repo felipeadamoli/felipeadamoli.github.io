@@ -5,12 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/stylesheets/app.css">
     <title>Moblize</title>
 </head>
@@ -94,7 +90,7 @@
         <!--Dev-->
 
         <div id="predevelopment" class="predevelopment height-100 d-flex
-                    justify-content-center align-items-center">
+                    justify-content-center">
             <div class="container">
                 <div id="carouselExampleIndicators" class="carousel
                             slide" data-ride="carousel">
@@ -313,9 +309,9 @@
             <div class="side-color"></div>
         </div>
         <!--who we are-->
-        <div id="who-we-are" class="who-we-are height-100 d-flex justify-content-center align-items-center">
+        <div id="who-we-are" class="who-we-are height-100 d-flex justify-content-center">
             <div class="container">
-                <div>
+                <div class="who-we-are-container">
                     <div class="row">
                         <div class="offset-md-1 col-md-6 col-6 offset-1 ">
                             <h1 class="dev-title-upper">quem somos</h1>
@@ -352,12 +348,84 @@
                 </div>
             </div>
         </div>
+        <!--Cards-->
+        <div id="clients" class="height-100 container">
+            <div class="row">
+                <div class="offset-md-1 col-md-6 col-6 offset-1 clients-title">
+                    <h1 class="dev-title-upper">clientes</h1>
+                </div>
+            </div>
+            <div class="container-client-images">
+                <div class="client-image first-client-image actived-client-image"></div>
+                <div class="client-image second-client-image"></div>
+                <div class="client-image third-client-image"></div>
+                <div class="client-image fourth-client-image"></div>
+                <div class="client-image fifth-client-image"></div>
+            </div>
+            <div class="row position-relative">
+                <div class="col-md-3 offset-md-1 col-10 offset-1 col-6">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            <span class="quote-icon">&ldquo;</span>
+                            <br>
+                            <div class="container-relative">
+                                <span class="testemony-text">Felicita-me as medidas tomadas pela moblize. Serviço de qualidade e sinceridade nas transações!</span>
+                                <div class="blue-stripe first-stripe"></div>
+                                <div class="blue-stripe second-stripe"></div>
+                                <div class="blue-stripe third-stripe"></div>
+                            </div>
+                            <br>
+                            <hr class="hr-testemony">
+                            <span class="quote-icon quote-right">&rdquo;</span>
+                        </p>  
+                    </blockquote>
+                    <div class="photo-client text-client d-flex flex-row align-items-center">
+                        <img src="assets/images/imagem-testemunho.png" alt="Fotos do cliente">
+                        <div class="ml-3 d-flex justify-content-center align-items-center client-info">
+                            <p class="client-info"><span class="client-name">Sandra Carla</span>
+                                <br>
+                                <span class="brands">Swap</span>
+                            </p>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-1 col-6 cards-hidden-sm">
+                    <div class="pers100 container-cards">
+                        <div class="card first"></div>
+                        <div class="card second"></div>
+                        <div class="card third"></div>
+                        <div class="card forth"></div>
+                    </div>
+                </div>       
+                <a class="cards-control-next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center clients-footer cards-hidden-sm">
+                <div class="col-md-2 offset-md-1 d-flex justify-content-center align-items-center">
+                    <img class="first-img-clients clients-footer-selected img-clients" src="assets/images/logo1.png">
+                </div>
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <img class="img-clients" src="assets/images/logo2.jpg">
+                </div>
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <img class="img-clients" src="assets/images/logo3.png">
+                </div>
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <img class="img-clients" src="assets/images/logo4.jpg">
+                </div>
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <img class="img-clients" src="assets/images/logo5.png">
+                </div>
+            </div>
+        </div>
         <!-- Contact -->
         <div id="contact" class="contact height-100 d-flex flex-column">
             <!--Header-->
             <div id="title-contact" class="container">
                 <div class="row">
-                    <div class="offset-2 offset-md-3">
+                    <div class="offset-2 offset-md-4 lets-talk">
                         <h1>Vamos conversar?</h1>
                     </div>
                 </div>
@@ -404,6 +472,7 @@
             <footer class="footer">
                 <div class="d-flex flex-column justify-content-center align-items-center center-middle-flex">
                     <img src="assets/images/logo_moblize_full.png" class="img-fluid mt-2 mb-2" />
+                    <p id="contact-email"> <i class="fab fa-whatsapp ml-1"></i> <i class="fas fa-phone ml-1 mr-1"></i>(11) 98519-9633</p>
                     <p id="contact-email">contato@moblize.com</p>
                     <p>Todos os direitos reservados - 2018</p>
                 </div>
